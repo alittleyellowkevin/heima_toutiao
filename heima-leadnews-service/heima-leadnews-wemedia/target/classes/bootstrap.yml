@@ -21,4 +21,18 @@ minio:
   bucket: leadnews
   endpoint: http://localhost:9000
   readPath: http://localhost:9000
-
+feign:
+  # 开启feign对hystrix熔断降级的支持
+  hystrix:
+    enabled: true
+  # 修改调用超时时间
+  client:
+    config:
+      default:
+        connectTimeout: 2000
+        readTimeout: 2000
+aliyun:
+  accessKeyId: LTAI5tErHvZe2kPzGxx4sq5V
+  secret: hkrWhJeoL9d88Ho6TR5E3luWvPQk0M
+  #aliyun.scenes=porn,terrorism,ad,qrcode,live,logo
+  scenes: terrorism
