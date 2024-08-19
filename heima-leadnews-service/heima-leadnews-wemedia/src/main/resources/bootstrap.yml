@@ -31,8 +31,3 @@ feign:
       default:
         connectTimeout: 2000
         readTimeout: 2000
-aliyun:
-  accessKeyId: LTAI5tErHvZe2kPzGxx4sq5V
-  secret: hkrWhJeoL9d88Ho6TR5E3luWvPQk0M
-  #aliyun.scenes=porn,terrorism,ad,qrcode,live,logo
-  scenes: terrorism
